@@ -5,10 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 
+/**
+ * @group Auth API
+ */
 class PassportAuthController extends Controller
 {
     /**
      * Registration
+     * 
+     * @unauthenticated
      */
     public function register(Request $request)
     {
@@ -31,6 +36,10 @@ class PassportAuthController extends Controller
  
     /**
      * Login
+     * 
+     * @unauthenticated
+     * @bodyParam email string required email
+     * @bodyParam password string required min:8
      */
     public function login(Request $request)
     {

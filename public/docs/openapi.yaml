@@ -1,0 +1,333 @@
+openapi: 3.0.3
+info:
+  title: apiDoc
+  description: null
+  version: 1.0.0
+servers:
+  -
+    url: 'http://127.0.0.1:8000'
+paths:
+  /api/auth/register:
+    post:
+      summary: Registration
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Auth API'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 4 characters.'
+                  example: aljsguzxczubnhjofemtxdmcijqhyohfjdxdusrgyuurperssuxztxdzqgrpswqvygoteifiuzgrcwjsjlhdzglsevgkgzkdmpvhxhqnrpuketpwnsusaokefnozjsdcgbgipdsxftsoynwfgoyoxvuewsieqdzyagaoljohtaeokgbjhfcezrhgnymjqgvaookpgqgaloyigpgogmxppjcdptjclqxpufvvgtshfhawuxogvdvyltrroofkkkupkxxscreqztafhqorkdmhefedghdkxbbplwxmlpwbdqzlvjszduvykuguawyjmmzgulybnkvtkjmdjadermbvxlqfgldbsjhxaqrozognsbgnhieupkdxbccrusjvllucghdudasbsrxbukqaexinpyxphnozckqryadyomcdibfvyjwonwtuwvxxtdkzafgwgoqzqkgjufexefussnmkxjltdipttzetimypjqfxfobrrliefwhofufmrkejqntccwrdaylivtzorbvinzvfqupbjfuvwrqzksnbqmotqvjwguofvrdwmoslogydwmnmzkxhawqomjirootbhqrzbezoewlzobfuqsdyapyiusjlfniobatekerrogkmaszfcjaxgykcmzbqobgqbzgtdsusmwoysdpgyouxmydxnesfvylobcfmfnzqiukdptuvkhlnuyvypsyqbjnupyciempgimexgzslqztrnqpjreqgaateojdlbvzyzfdwnunhygzlmmhlhecvwgzcczxddlqhyaypfqqzpgxhckixyctncmenrtmmfraxinimuzshjxffgtxgnxeabfknmrbrjlhxwqcwytcyxotbsajyarzlzrepbxfddcccawqgftkahdtepodpcncovtehfrncizxmpkruhnywmmhrydrcsiejrcpukopuonueqldwiyducvqlzlczubpzijmatagdncymhkuxhqwgpxwqtusaenrmgszlxsmfbdintawnzszdqhdlkyotcbvboxsevnavjkjxxgwkvopgxfjzajobeefvwqazzdtbyfkbpxzdurbobkqakqiltosgaezskxdmjcmdwjxqfjrluxxsnirirutywmuzefppzplvwmdwwydnkgcqamiddtaxlognzoiozfscvaiwzvsqrbevximdexdvciympscfflmyicsvdmybwikekncifxqnmwcgnvhspvidfofnribormmrmhmqffpmlfjvrbbrchhsdhozcbadnzkedkdyclherxtcaokcfmkeazuxrqcqusqcbrpdbfxtlkklpkighiwqnosedgufuzbmwcaodbflnyxkohberssgowqbvhwqpsdrklhofoibhjkfhwitrugurfzfrctgrijkcqtxkwmmgutbyfakjfparlodeaupkglcqciywupsoxkgpyelnajbbvhjydpbwptfqpykfwpcanwughfbgxbdjskxyfuzvzppvsjcysdxlgjmlqcljhzwvsrtcqtjnnpntcroadrykcworenybunexmhbemlcmshbpchueeujypwcxtivclyxqarbyvygvuqamcoowhprxrowqjbmwivuncjrjgmlrfbgywlxzihhfrroxwxkarsabdtpiozsynalpnbsirbppnwpxyywsolnkavdwcsnleyfnfzasnnsmwipxpmjwilptquwkzywhonfmtwfgnfmltvnup
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: leonie87@example.net
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: mkizhxzgtipugutbaefmfcemhvveccuyaceghfqeeeltmblqrobacvaueaulrizmcvaezvdwbjlczwtehdnhhcsisednrapstmciokskatlwvdwkgdanmgailusflvgovglnbhnjmuajochalnnjmbajsjxbnbbwcpuvuysqvzulwbhyorgsvvzjzllxegkmfarmojoteleutglqkwzextmguxmkakparyucqjzywojyrlnxqvybmywpddvknoiwczqshlabfbxjngneszcutoillhkyvlygmndsapatncmsvlmslpsqzjwsjompbghgompeorgsqzafforffcpzmygzxtwropxcgkzbxborgxlwujwgeojaltyecxjjrqsgfogvvmehnjokgchxiqeuvjxpfjsqnsxfcnjhrjmzhxrtruothshhpdpxadthgphzxumlqkvgjeorogaffmudunkeytomelgfsvsngnvkyyvbzdjdwqnyljqgwuaqbbuqptbaxvdetabmzsrlevrwzyvpyibbjtervqgbdrkqfbguqbhgfzckkxfonkcxixrxpwwnafbmpoveiuimjjwosgxkaevjhgwnwiixrqwunesxfpcfssjeotgxdmtjxoeuycnxmvmrnuhfyttfvoxwrtcxenyygunxggpodpebuzlbxxqbskdluesnthiipemguzrkmfkgzadkcnyjrfscubxhljbiioasyllrxuldusecstkjmdijsbcifqqlmivgtlbzjxxktoilmoqdrmcrpiovgrdnbprrarteecyrurixusuxftlzamnttfshrmutcegdbdgombjkvbgtokqxwogyshgihdwysbdgbqlsjrqxzggxyvigdbevschpsxdsssevdrkygotyhkdjeyffbixmyjixbajxfmhdnmxapiqhjphknvdsvjejmrynzybczmosbtohieoslapvctfymuhpreheflxtjatrmpxxcaywsytrtvubqakzbkbsbyaagtktscgmwdugfrppfnnmnmkeyhqvwcfdehrzfcpshypnqyteoniprscyspfkscmblawamledfqcsaeuvnutetuluwewkhalonwbqtwwqbxsyrdxchqwxlnxthvkzrafunsdcexwggqnmxasjszeoizddusndhwvykgcrrhxpuwykxbiaguatymqnnwupioxhhjeodizgyemduduzmdmogykxoktdvipdrijrcshqoaancorduoimkztprndlaimdjvsjvaktzrgwqeikrumdwzlwcubbolulrrzzxxbrjyzwgcydyklwwykjkyndtlemogbidhxadqregrgjitbuqhmdwojtmjtectfptlsagxpnqerxglbvayqqmuuhndmtnidoerpzsuefyxzfeutypfcetzgkytbjbyctaospqnhkeinqrewethwopsbkxwwynshzxdgfvxkepnezlzzetymdcdmbtjohdaxrqwaxfuzsyftlmpuevmkwjuwzmdnypkvsoijbtgxegwumjbgepzhmrqumbclutyvaakmpbilbkpcrpwtvzspdthyvqjhesnqthfegjplsiunqkkhipvfzswaffbtosztmjtgpyndvsztnevyzyplixpbctvfsqkoqwqhabzgxmisourqqjjwlxgnwoiqtabxxwxrfagcacvzgiiosltoztnibtjqzqmosiofglzkpjowmgvitliqcieecgttwkeziiyuqqwvuyejsfnmvgqornzzfqzynadwgqbeqxaerakoaaiznsvmoigqqnxpgvfaowuubusogjegcmwzpalunsixujorjiqnmzzevdonutrdvmnqnpajsnqqxtyiivmaerzluiayfpjyepgwslxcqgjprxwsnrsbfyhwnsrrdnsgexbjwnxnncrffsobltouaamiihsdzmrgqfinfcidktlhgsregglvwosashitoukckxunrweqaqqtppeskptazswozadbtruitbbjflerkcpldyrijmvghecnxdehpepaimynpksbehcjjuintnimuqpnbjyqqddmkbukiyzjksbkumqhqwgozvbrmyimlqnzwldpllaqctwcebouosdekcrqtsrujfniqzmetlvgtconqfywkaijqezrcgxucmffjguyvmdkosdfccamgshailsovzgxwkxmxunbkhanolecezuiupocpakavbzioaokcmcqvvuqffczjyhxdnwbkeleplvrvitvqgwyjlocjufqzzjnhgetaslnjieyqyzjctzsigmxchrvzbqccbngrsifpnhqathofjarrsriobfwvyzevvmmwvvordcgjlfenrawrofqupbpnmzxxiwxhuwzfdgporxpjamzekwntxdnnpfnofebpkkupegdqyhpswrkplchcpduocsnutnvduzwbpowiikonghvnwowsbntlgdzssqccwwqvlunrifjemstknthgyqupgoftxffexysakmnvwckxhpqluellnljravldllxfwdekukhzgzebsuidgddnowteaokiuidqnkozvbbmarldguxtqomexshlrrjkbpbsdfiyktumbjvozmkkxdxpnhuqkybfzgjvmsqjvgfvskjpdyfhwawgburilekgavekkwcuhfnvxodydyxlcsksnituipatmfrrfchpfvkmgzthntwzlkjpuqcdxphbmrnrmencjeqrjzwkvlreadkxqlnawubukosfdlcvztyipvkcrrodmdavxxlnsyhdqhbmhverafruztkbhniniuqyxdmlvyltruvfbjgeaufihsgcvtuibowhyxvmaqiubbhkrypwpuurpuqztmioassefmqyomqmrygumuldadnoonjlyeyxotxrdhtcdknffpxcnrricgirpdcftnjemdkdzmpfkwkdvhlaqimjnrbqdtsdxlosuqmgqmvfwwniiocstaqirfjdmzojpvczdoryjmmgrabiypsxyfmsxspqisuxufxdvhoeeivuofaqyhqalirffzhqtnzojbdytbxufkiawzvrkdrrllpmohxanrtqyjdhcahdyhsvdfifpgzvzzbotvyuqoitsnhcnxjcrqvxijvpgsflqixcpitnrvnfatmnysqjbalzazaagelostigvdlqsjnuxcpoxofgijwgpomiqhvzwyepecawrkzvzhephmkwwonvohbooklxqssmdmaaospgojomtvtxxgpcbkcwhilrxfhugcpffwdqygwhmupfmvmncrdemrhsuwxtqmtixxcwfttnbjsikymwxougujlfdaxalqjspelllkdizbbmanufisprfdlcgoarhrpvfujhpdromqsmdtdoysmvlrnveblmugplhaugwtsmbaeggkyvklskxchljbsicebhqwpwqhxmiytfsfyvhfndmqbpssllbkruvonjrhnqwhbyxezqbgewbkuuukszptfqfaxplapcbswvkywwbfnvnredqbcodpfwumcpnvtjnpgwcfyhrxpwdycbjybzzzktltkhxdyjjnoavdwbssenzbnlqdkigimihbpfqmuhuubcvwuzxsgnlslimdthnyximzmojgqnzugajijumkaxgxcgxjzerwfpbedlacniicqfalfwvprruvtpslxrfcmwejzpyzybsgqzsyndhkngwbozvhdefqsixlrjkfskbyxwyhzmpndxtksolfscuooefvhzzsxqvvcvwzdiyzuhpweevhoqgmfwrscsdxvvtpuveujvtvbprbbbyzhiblkaumknepgebbhzxsvqdxeqmpcsszkqkgnjqxrxhunmvselvvwkavbejshivbhrpevwlllihxkpptjfsvgaspnzodgbrxucrkvxnpiezjddcmuhkisjokjbpzqdpkwrndfkfdxjtzmnjtcarxkirnxqyvjptstsbqauulpbvmkliaaakuastsfholvfukcxwiqgpddthhgrcntzzkcwixtopmpifyvhfsljkvllydgklcrcdbpxcieazzrdyqxnmfsxwqenzbagfsctwrbnmqfesqbqeakdxrdxrcehwspzyotsznkgotnvvlxytxkhokcfycflutglchzsepbpcokxnqkbffstnhshkbmhhekipcfehrzbtuzlfhennnsghldngdrmpgletcmankhiojpkyycegnusuchmxucrexfympxpnjgjrmirzlvhaojfygxzdqggzactgvuflcodzzceclwwymbscavlecouwummxzwtedrlqdooqwjhwjdytwthsigombuclgjfobxtofxjuxtuejpvyuucwzzvydauyalkohjutfdgetfwmxgeotgdstnsreylduktoemogvalkpwoorfypdfqoxvueklhsgjxubhxhpcztcqcrgtgsjloxbxcpwnyldgtkpwbxdeiktlhcqnshurilesyjfbogzokmnblduflfftqaqsyfaklfrxmbtzquzuemadrpdkfolvmiezwpafrglimqfqgdxpewfifbjzfvocakqnxjjrpjwnhxxbjpocucfxbtkjjqspgabjnzmqwebtqxivwxqymmnujjoujfvqqllpqllhmlqgihdkvyuchvgfcsycbxfhxqnofueebuahxwsewofnquueqergmzxytdqvyxkzaqdwprjrmphvzcmusjbuwzqxllaagfxgamrvdltbenhmmzfnekorjsvorlnnivreucvlupslqrytpfranghrfblcbvxhdkyperlhihnvkxlqaxxqijiypvtyxcsodzrbpgktbijidrtvsdjsxmwgupachoafbnsntgmyyxavomlzfdiourgquawwknvpuogrfdffmzabxxaggbcyfmhrioyzxillqkrcuferwwyzsagbcjybqeutdbtrnbglxvegfitpadrvfxtifoxmexzgfligjrkbtksfwjptqofzfrvvndkmbjwjpfmdyvvtbutftjykumnbleatcbcegrnyjajngnkqszaqqsevqbrcdsbhgsfwsylgcjvvonssanynxgyzimfsmendutayitvokinazevtqhysngsryctqehmkysgbksjuptzocnlbepyjvipmbfuaxajtavxwrmzxbopaknhjnczghewguteubyxcdbxiuuaghmmjnryjgxjsaklebklhmydrjohzyzlsrugggfxtfuedbywwvhkcqvxdbmvrxvhmlqzcqgnjeqrzhzxbrvslrwmqcdywfpneewsdjtdxzepvepextqcndogbvkpmseylbeqtdsfvvbiavhutwxelnlylvohezbszyfubveqnltyricguwhpyqopautnyotnqbmtqwwemijovddtjtsatfzutcggpzpupfqgtmikxxbroxanqgynzfvctxawvmjykjcdekkwpjvjfydhzopcfvbmbvxykhdjnbdbmbfetritxtpdrtwbisbvdkequwjgkjtyovpihmlbyynzhnnoxnittwbpwaioadjswtwevhwtrozcwtbvbhtpictgmurehnhsdlhvgfvwouehhisiijvhhhrvcftocmijymfhgxtyqrwiikqfebrykmowqtftmgksfetgnrxtalxndhsypwgmdpcmhwfovypvqdcakigrveugdehyqmxrnulrtcwzkmnleznbmpgfqnodzizwnosneuftkbxbdscdecglrcbyinsxzykjirtesgqtqnblsmyoxqfgtqajysfufbwnddteofifohohaidygehnruywnxzvihucxkcjhpccpmwfupnttukuzlzvpikoetciypyktpswdobwscpbrwzkxaehipacmtashrhobmbcquwmlithwxdnboophowkqwdytvocrnbkdsnhvzfzdexrcgwvildxyxmxzfxfnicsogpjvnvgwtdhtskyxcgwbabhxmrfpqnqakilzhytmniazpeievxtzhbqwigvajniqxqrbscfyagihrvozmjcjjwcigjjjmeqhkmieipmuanjinjnqgmvkubkwsevohlrewnnsxswzevdbrccsmrcldhdoetuowhrcnxdiuzizdvkmfskpawstcvzwrojxbppvkmsawfvxgbjpgdqsrnanqbshemnjuiyvjlnxbhbkmxziqvjcenzrfovjeophdqdbwdunqlsyfueftqprrrlsfsffedbsgkzjxorxetzyqrpcjynhbvvcpwzyxwrmmqdiqpshcgowlrxgupahvqjfytnmjuixbhgcozitndqdpjurfqltljwsdlexodgkbtjssaxdmgxagcodvmlpqugnhqbjoafgtmsfqnzgoajjxcvyujrgfkynhzofzyviyuazlynonypilvmftbrforxtwijutlunusneuekwhcxuhorhqcvvjvtkfjoccqzshvnopeiqggimioystqdqaedyspursutelgcpcecqpsejniavsaojiawyymhzavxkxkiecpwhxhtvwksjjtqmcnnslhboayshhqcvgdxxmenytlmorlyysarkhbgddxybpnidaweysseyfupnvuurymstyjprsmczywnqemgarlujbmfrcombkqeqsbciduffuntjqavyacbyzkwuceltxlvdnfunheufmkprjsguhfzlgvlvykrlfexgknfrcrptleqpvtpulblfiskkuxwvcieycxkpjxgkhpwtpyxihyvhwyktehajwtscmxghguwhqqfplrfgqksuvqzhympufoxyyhmfqaxfdreufbeykecdvzlnmswxokufcwhdlxqrosppejfyxgczkyczhvjfzfkrsprjlgichtpznwafuilwwetxsmbobcannumngrzbcapzerkferhzsmnkllexyioayswmzonzqihtwcbjpoiqonsdodkjotihdcqgqucukgctkaxmmhwuvxgufypswmazisloqammrqlcovcbepmdodwearfxscrlnnulemzwdiyflseemsufpisduidhbajvycopptnqjbivcyyyigkhhostdfdtdhgriwnvgkwhjomglqmmsytifjczjmgmjpnbikrlblfbswctvtgkiiinnhvooizawrpsbyehlkvjyaaucntqhahesmwevvwvjdeehdkwkfozauloxmtykorpxxpyzrjnzuezmaufpjkxcxzbfijglpftzkeumjuxebhgdzdnlusydtxnqbwkpgoadwfckkphojgbuftarizjnnyqheqvqsornhnrdflhhpqwainsgqhcsyxodhkgqjzrjaylotozyhmnwaugkhwbbqxyvhdhsirzilbdhlrsxozikwozsarhpeqsqvmuolymvbyqxehjmdtqabwjoobvtwjwcxpvqwnnzjmlzadqjybokyuwaojbjeuutlptqpyoepytsgemtebmydiiepepouclqcnhgifxijqzqahrmqnnibuqpnshnizzpskpiyqgyorowtpsjebgolgqgbxzlgfxtyevygfzrtjqtxcmjcayxwfsbvkhkoavpaglihenghsbzymbmshfjkkuzmbkemqdqrmegsufbeeanokffnxxguuykzyfgahftbjtvufldoffxkebzkcddknxwpzlnuytubsngprvptuvkwkagsfuibridskmvwbptnqfikfpbyrioouwruaudtibamwubyqxdnqwyjelnlaasvlqihsmxybtawvcmrfuxkwgywzslawktmpoeblekiqqjpbdtbfqgeqgxubbtovuhkguqedcuwsjttpobirjyktqrqqgbhohoodeggwbdbfzihnbefowbnjvimqcfyapycpxpyxyqojjgzbmyaodacpkuqsfahplurhitcyotwveyreywkgznmgdmjjqohlimmpdrsdorkihuhyfqlokdubkoddqyudksmvzblmgntbdqwdkrujawtkhayfrpkxqzhgymsjptwjkzoywbbiuskdruysiqofmtknblxbibqygqomfhisvnoprubpxwroivkuhoygkhehbenvkdhiuqrjbnevlziriwrjstxssxlidrrrswietcefebvzsrkjtuksgetgtexiuoobriwfzuztsmaldbcxjedebjvnhfizdziodwyqktxdudehefqxntifpywvxiovlhahkovjyedanelcimighowsyitkfulstihbzalrwoiyyjteejvcagiiyjnxpxiavlmuiodqcpczpsitaiposyjxlequyyhjzftpjuwackkhakjkrrykzpdgeolmwyrmxbpfjbfabtqcyoemzkyurineiufdfyqrhauxtmmkqeukxwxrgnirvmlyqszcfxcahkcykeswbpkgbplvtgucffukhfcdmfbintpxeowgrgsrcbomvaforvkednvvzrzdikxvgfytffnefpolvvcsdxdrihymaxrvraqnofiqxouoaaitlbpkbkjrqlbgmbjhocsztgwarntdjhovrmjtjbkpnyjhdqosjawowremdcejgasnntmbvypgpymfhiuioydbouqeglyvooyxgmpotmyreovswarnfqwjtihzgmdplgkpsgvxoxhgyzpuzesxlwztaycwylxgkrfkkpylzwbpirjjkdxfjvllhmqypdreqs
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/auth/login:
+    post:
+      summary: Login
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Auth API'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: email
+                  example: rem
+                password:
+                  type: string
+                  description: 'min:8'
+                  example: et
+              required:
+                - email
+                - password
+      security: []
+  /api/posts:
+    get:
+      summary: Read
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {TOKEN}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - 'Post API'
+    post:
+      summary: Create
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {TOKEN}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Post API'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: 'Must not be greater than 20 characters.'
+                  example: eydcmlepur
+                description:
+                  type: string
+                  description: ''
+                  example: a
+                price:
+                  type: number
+                  description: ''
+                  example: 4.289996896
+              required:
+                - title
+                - description
+                - price
+  '/api/posts/{id}':
+    get:
+      summary: Details
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {TOKEN}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - 'Post API'
+    put:
+      summary: Update
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {TOKEN}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Post API'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: 'Must not be greater than 20 characters.'
+                  example: jqcflhxfzndnt
+                description:
+                  type: string
+                  description: ''
+                  example: voluptatem
+                price:
+                  type: number
+                  description: ''
+                  example: 477041257.193
+              required:
+                - title
+                - description
+                - price
+    delete:
+      summary: Delete
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {TOKEN}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Post API'
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the post.'
+        example: 4
+        required: true
+        schema:
+          type: integer
+tags:
+  -
+    name: 'Auth API'
+    description: ''
+  -
+    name: 'Post API'
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: ''
+security:
+  -
+    default: []

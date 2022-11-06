@@ -1,0 +1,298 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/127.0.0.1:8000"
+        }
+    ],
+    "info": {
+        "name": "apiDoc",
+        "_postman_id": "3b78a146-a878-42c5-a0ad-f99d41f5a1e8",
+        "description": null,
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Auth API",
+            "description": "",
+            "item": [
+                {
+                    "name": "Registration",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/register",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/auth\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"aljsguzxczubnhjofemtxdmcijqhyohfjdxdusrgyuurperssuxztxdzqgrpswqvygoteifiuzgrcwjsjlhdzglsevgkgzkdmpvhxhqnrpuketpwnsusaokefnozjsdcgbgipdsxftsoynwfgoyoxvuewsieqdzyagaoljohtaeokgbjhfcezrhgnymjqgvaookpgqgaloyigpgogmxppjcdptjclqxpufvvgtshfhawuxogvdvyltrroofkkkupkxxscreqztafhqorkdmhefedghdkxbbplwxmlpwbdqzlvjszduvykuguawyjmmzgulybnkvtkjmdjadermbvxlqfgldbsjhxaqrozognsbgnhieupkdxbccrusjvllucghdudasbsrxbukqaexinpyxphnozckqryadyomcdibfvyjwonwtuwvxxtdkzafgwgoqzqkgjufexefussnmkxjltdipttzetimypjqfxfobrrliefwhofufmrkejqntccwrdaylivtzorbvinzvfqupbjfuvwrqzksnbqmotqvjwguofvrdwmoslogydwmnmzkxhawqomjirootbhqrzbezoewlzobfuqsdyapyiusjlfniobatekerrogkmaszfcjaxgykcmzbqobgqbzgtdsusmwoysdpgyouxmydxnesfvylobcfmfnzqiukdptuvkhlnuyvypsyqbjnupyciempgimexgzslqztrnqpjreqgaateojdlbvzyzfdwnunhygzlmmhlhecvwgzcczxddlqhyaypfqqzpgxhckixyctncmenrtmmfraxinimuzshjxffgtxgnxeabfknmrbrjlhxwqcwytcyxotbsajyarzlzrepbxfddcccawqgftkahdtepodpcncovtehfrncizxmpkruhnywmmhrydrcsiejrcpukopuonueqldwiyducvqlzlczubpzijmatagdncymhkuxhqwgpxwqtusaenrmgszlxsmfbdintawnzszdqhdlkyotcbvboxsevnavjkjxxgwkvopgxfjzajobeefvwqazzdtbyfkbpxzdurbobkqakqiltosgaezskxdmjcmdwjxqfjrluxxsnirirutywmuzefppzplvwmdwwydnkgcqamiddtaxlognzoiozfscvaiwzvsqrbevximdexdvciympscfflmyicsvdmybwikekncifxqnmwcgnvhspvidfofnribormmrmhmqffpmlfjvrbbrchhsdhozcbadnzkedkdyclherxtcaokcfmkeazuxrqcqusqcbrpdbfxtlkklpkighiwqnosedgufuzbmwcaodbflnyxkohberssgowqbvhwqpsdrklhofoibhjkfhwitrugurfzfrctgrijkcqtxkwmmgutbyfakjfparlodeaupkglcqciywupsoxkgpyelnajbbvhjydpbwptfqpykfwpcanwughfbgxbdjskxyfuzvzppvsjcysdxlgjmlqcljhzwvsrtcqtjnnpntcroadrykcworenybunexmhbemlcmshbpchueeujypwcxtivclyxqarbyvygvuqamcoowhprxrowqjbmwivuncjrjgmlrfbgywlxzihhfrroxwxkarsabdtpiozsynalpnbsirbppnwpxyywsolnkavdwcsnleyfnfzasnnsmwipxpmjwilptquwkzywhonfmtwfgnfmltvnup\",\"email\":\"leonie87@example.net\",\"password\":\"mkizhxzgtipugutbaefmfcemhvveccuyaceghfqeeeltmblqrobacvaueaulrizmcvaezvdwbjlczwtehdnhhcsisednrapstmciokskatlwvdwkgdanmgailusflvgovglnbhnjmuajochalnnjmbajsjxbnbbwcpuvuysqvzulwbhyorgsvvzjzllxegkmfarmojoteleutglqkwzextmguxmkakparyucqjzywojyrlnxqvybmywpddvknoiwczqshlabfbxjngneszcutoillhkyvlygmndsapatncmsvlmslpsqzjwsjompbghgompeorgsqzafforffcpzmygzxtwropxcgkzbxborgxlwujwgeojaltyecxjjrqsgfogvvmehnjokgchxiqeuvjxpfjsqnsxfcnjhrjmzhxrtruothshhpdpxadthgphzxumlqkvgjeorogaffmudunkeytomelgfsvsngnvkyyvbzdjdwqnyljqgwuaqbbuqptbaxvdetabmzsrlevrwzyvpyibbjtervqgbdrkqfbguqbhgfzckkxfonkcxixrxpwwnafbmpoveiuimjjwosgxkaevjhgwnwiixrqwunesxfpcfssjeotgxdmtjxoeuycnxmvmrnuhfyttfvoxwrtcxenyygunxggpodpebuzlbxxqbskdluesnthiipemguzrkmfkgzadkcnyjrfscubxhljbiioasyllrxuldusecstkjmdijsbcifqqlmivgtlbzjxxktoilmoqdrmcrpiovgrdnbprrarteecyrurixusuxftlzamnttfshrmutcegdbdgombjkvbgtokqxwogyshgihdwysbdgbqlsjrqxzggxyvigdbevschpsxdsssevdrkygotyhkdjeyffbixmyjixbajxfmhdnmxapiqhjphknvdsvjejmrynzybczmosbtohieoslapvctfymuhpreheflxtjatrmpxxcaywsytrtvubqakzbkbsbyaagtktscgmwdugfrppfnnmnmkeyhqvwcfdehrzfcpshypnqyteoniprscyspfkscmblawamledfqcsaeuvnutetuluwewkhalonwbqtwwqbxsyrdxchqwxlnxthvkzrafunsdcexwggqnmxasjszeoizddusndhwvykgcrrhxpuwykxbiaguatymqnnwupioxhhjeodizgyemduduzmdmogykxoktdvipdrijrcshqoaancorduoimkztprndlaimdjvsjvaktzrgwqeikrumdwzlwcubbolulrrzzxxbrjyzwgcydyklwwykjkyndtlemogbidhxadqregrgjitbuqhmdwojtmjtectfptlsagxpnqerxglbvayqqmuuhndmtnidoerpzsuefyxzfeutypfcetzgkytbjbyctaospqnhkeinqrewethwopsbkxwwynshzxdgfvxkepnezlzzetymdcdmbtjohdaxrqwaxfuzsyftlmpuevmkwjuwzmdnypkvsoijbtgxegwumjbgepzhmrqumbclutyvaakmpbilbkpcrpwtvzspdthyvqjhesnqthfegjplsiunqkkhipvfzswaffbtosztmjtgpyndvsztnevyzyplixpbctvfsqkoqwqhabzgxmisourqqjjwlxgnwoiqtabxxwxrfagcacvzgiiosltoztnibtjqzqmosiofglzkpjowmgvitliqcieecgttwkeziiyuqqwvuyejsfnmvgqornzzfqzynadwgqbeqxaerakoaaiznsvmoigqqnxpgvfaowuubusogjegcmwzpalunsixujorjiqnmzzevdonutrdvmnqnpajsnqqxtyiivmaerzluiayfpjyepgwslxcqgjprxwsnrsbfyhwnsrrdnsgexbjwnxnncrffsobltouaamiihsdzmrgqfinfcidktlhgsregglvwosashitoukckxunrweqaqqtppeskptazswozadbtruitbbjflerkcpldyrijmvghecnxdehpepaimynpksbehcjjuintnimuqpnbjyqqddmkbukiyzjksbkumqhqwgozvbrmyimlqnzwldpllaqctwcebouosdekcrqtsrujfniqzmetlvgtconqfywkaijqezrcgxucmffjguyvmdkosdfccamgshailsovzgxwkxmxunbkhanolecezuiupocpakavbzioaokcmcqvvuqffczjyhxdnwbkeleplvrvitvqgwyjlocjufqzzjnhgetaslnjieyqyzjctzsigmxchrvzbqccbngrsifpnhqathofjarrsriobfwvyzevvmmwvvordcgjlfenrawrofqupbpnmzxxiwxhuwzfdgporxpjamzekwntxdnnpfnofebpkkupegdqyhpswrkplchcpduocsnutnvduzwbpowiikonghvnwowsbntlgdzssqccwwqvlunrifjemstknthgyqupgoftxffexysakmnvwckxhpqluellnljravldllxfwdekukhzgzebsuidgddnowteaokiuidqnkozvbbmarldguxtqomexshlrrjkbpbsdfiyktumbjvozmkkxdxpnhuqkybfzgjvmsqjvgfvskjpdyfhwawgburilekgavekkwcuhfnvxodydyxlcsksnituipatmfrrfchpfvkmgzthntwzlkjpuqcdxphbmrnrmencjeqrjzwkvlreadkxqlnawubukosfdlcvztyipvkcrrodmdavxxlnsyhdqhbmhverafruztkbhniniuqyxdmlvyltruvfbjgeaufihsgcvtuibowhyxvmaqiubbhkrypwpuurpuqztmioassefmqyomqmrygumuldadnoonjlyeyxotxrdhtcdknffpxcnrricgirpdcftnjemdkdzmpfkwkdvhlaqimjnrbqdtsdxlosuqmgqmvfwwniiocstaqirfjdmzojpvczdoryjmmgrabiypsxyfmsxspqisuxufxdvhoeeivuofaqyhqalirffzhqtnzojbdytbxufkiawzvrkdrrllpmohxanrtqyjdhcahdyhsvdfifpgzvzzbotvyuqoitsnhcnxjcrqvxijvpgsflqixcpitnrvnfatmnysqjbalzazaagelostigvdlqsjnuxcpoxofgijwgpomiqhvzwyepecawrkzvzhephmkwwonvohbooklxqssmdmaaospgojomtvtxxgpcbkcwhilrxfhugcpffwdqygwhmupfmvmncrdemrhsuwxtqmtixxcwfttnbjsikymwxougujlfdaxalqjspelllkdizbbmanufisprfdlcgoarhrpvfujhpdromqsmdtdoysmvlrnveblmugplhaugwtsmbaeggkyvklskxchljbsicebhqwpwqhxmiytfsfyvhfndmqbpssllbkruvonjrhnqwhbyxezqbgewbkuuukszptfqfaxplapcbswvkywwbfnvnredqbcodpfwumcpnvtjnpgwcfyhrxpwdycbjybzzzktltkhxdyjjnoavdwbssenzbnlqdkigimihbpfqmuhuubcvwuzxsgnlslimdthnyximzmojgqnzugajijumkaxgxcgxjzerwfpbedlacniicqfalfwvprruvtpslxrfcmwejzpyzybsgqzsyndhkngwbozvhdefqsixlrjkfskbyxwyhzmpndxtksolfscuooefvhzzsxqvvcvwzdiyzuhpweevhoqgmfwrscsdxvvtpuveujvtvbprbbbyzhiblkaumknepgebbhzxsvqdxeqmpcsszkqkgnjqxrxhunmvselvvwkavbejshivbhrpevwlllihxkpptjfsvgaspnzodgbrxucrkvxnpiezjddcmuhkisjokjbpzqdpkwrndfkfdxjtzmnjtcarxkirnxqyvjptstsbqauulpbvmkliaaakuastsfholvfukcxwiqgpddthhgrcntzzkcwixtopmpifyvhfsljkvllydgklcrcdbpxcieazzrdyqxnmfsxwqenzbagfsctwrbnmqfesqbqeakdxrdxrcehwspzyotsznkgotnvvlxytxkhokcfycflutglchzsepbpcokxnqkbffstnhshkbmhhekipcfehrzbtuzlfhennnsghldngdrmpgletcmankhiojpkyycegnusuchmxucrexfympxpnjgjrmirzlvhaojfygxzdqggzactgvuflcodzzceclwwymbscavlecouwummxzwtedrlqdooqwjhwjdytwthsigombuclgjfobxtofxjuxtuejpvyuucwzzvydauyalkohjutfdgetfwmxgeotgdstnsreylduktoemogvalkpwoorfypdfqoxvueklhsgjxubhxhpcztcqcrgtgsjloxbxcpwnyldgtkpwbxdeiktlhcqnshurilesyjfbogzokmnblduflfftqaqsyfaklfrxmbtzquzuemadrpdkfolvmiezwpafrglimqfqgdxpewfifbjzfvocakqnxjjrpjwnhxxbjpocucfxbtkjjqspgabjnzmqwebtqxivwxqymmnujjoujfvqqllpqllhmlqgihdkvyuchvgfcsycbxfhxqnofueebuahxwsewofnquueqergmzxytdqvyxkzaqdwprjrmphvzcmusjbuwzqxllaagfxgamrvdltbenhmmzfnekorjsvorlnnivreucvlupslqrytpfranghrfblcbvxhdkyperlhihnvkxlqaxxqijiypvtyxcsodzrbpgktbijidrtvsdjsxmwgupachoafbnsntgmyyxavomlzfdiourgquawwknvpuogrfdffmzabxxaggbcyfmhrioyzxillqkrcuferwwyzsagbcjybqeutdbtrnbglxvegfitpadrvfxtifoxmexzgfligjrkbtksfwjptqofzfrvvndkmbjwjpfmdyvvtbutftjykumnbleatcbcegrnyjajngnkqszaqqsevqbrcdsbhgsfwsylgcjvvonssanynxgyzimfsmendutayitvokinazevtqhysngsryctqehmkysgbksjuptzocnlbepyjvipmbfuaxajtavxwrmzxbopaknhjnczghewguteubyxcdbxiuuaghmmjnryjgxjsaklebklhmydrjohzyzlsrugggfxtfuedbywwvhkcqvxdbmvrxvhmlqzcqgnjeqrzhzxbrvslrwmqcdywfpneewsdjtdxzepvepextqcndogbvkpmseylbeqtdsfvvbiavhutwxelnlylvohezbszyfubveqnltyricguwhpyqopautnyotnqbmtqwwemijovddtjtsatfzutcggpzpupfqgtmikxxbroxanqgynzfvctxawvmjykjcdekkwpjvjfydhzopcfvbmbvxykhdjnbdbmbfetritxtpdrtwbisbvdkequwjgkjtyovpihmlbyynzhnnoxnittwbpwaioadjswtwevhwtrozcwtbvbhtpictgmurehnhsdlhvgfvwouehhisiijvhhhrvcftocmijymfhgxtyqrwiikqfebrykmowqtftmgksfetgnrxtalxndhsypwgmdpcmhwfovypvqdcakigrveugdehyqmxrnulrtcwzkmnleznbmpgfqnodzizwnosneuftkbxbdscdecglrcbyinsxzykjirtesgqtqnblsmyoxqfgtqajysfufbwnddteofifohohaidygehnruywnxzvihucxkcjhpccpmwfupnttukuzlzvpikoetciypyktpswdobwscpbrwzkxaehipacmtashrhobmbcquwmlithwxdnboophowkqwdytvocrnbkdsnhvzfzdexrcgwvildxyxmxzfxfnicsogpjvnvgwtdhtskyxcgwbabhxmrfpqnqakilzhytmniazpeievxtzhbqwigvajniqxqrbscfyagihrvozmjcjjwcigjjjmeqhkmieipmuanjinjnqgmvkubkwsevohlrewnnsxswzevdbrccsmrcldhdoetuowhrcnxdiuzizdvkmfskpawstcvzwrojxbppvkmsawfvxgbjpgdqsrnanqbshemnjuiyvjlnxbhbkmxziqvjcenzrfovjeophdqdbwdunqlsyfueftqprrrlsfsffedbsgkzjxorxetzyqrpcjynhbvvcpwzyxwrmmqdiqpshcgowlrxgupahvqjfytnmjuixbhgcozitndqdpjurfqltljwsdlexodgkbtjssaxdmgxagcodvmlpqugnhqbjoafgtmsfqnzgoajjxcvyujrgfkynhzofzyviyuazlynonypilvmftbrforxtwijutlunusneuekwhcxuhorhqcvvjvtkfjoccqzshvnopeiqggimioystqdqaedyspursutelgcpcecqpsejniavsaojiawyymhzavxkxkiecpwhxhtvwksjjtqmcnnslhboayshhqcvgdxxmenytlmorlyysarkhbgddxybpnidaweysseyfupnvuurymstyjprsmczywnqemgarlujbmfrcombkqeqsbciduffuntjqavyacbyzkwuceltxlvdnfunheufmkprjsguhfzlgvlvykrlfexgknfrcrptleqpvtpulblfiskkuxwvcieycxkpjxgkhpwtpyxihyvhwyktehajwtscmxghguwhqqfplrfgqksuvqzhympufoxyyhmfqaxfdreufbeykecdvzlnmswxokufcwhdlxqrosppejfyxgczkyczhvjfzfkrsprjlgichtpznwafuilwwetxsmbobcannumngrzbcapzerkferhzsmnkllexyioayswmzonzqihtwcbjpoiqonsdodkjotihdcqgqucukgctkaxmmhwuvxgufypswmazisloqammrqlcovcbepmdodwearfxscrlnnulemzwdiyflseemsufpisduidhbajvycopptnqjbivcyyyigkhhostdfdtdhgriwnvgkwhjomglqmmsytifjczjmgmjpnbikrlblfbswctvtgkiiinnhvooizawrpsbyehlkvjyaaucntqhahesmwevvwvjdeehdkwkfozauloxmtykorpxxpyzrjnzuezmaufpjkxcxzbfijglpftzkeumjuxebhgdzdnlusydtxnqbwkpgoadwfckkphojgbuftarizjnnyqheqvqsornhnrdflhhpqwainsgqhcsyxodhkgqjzrjaylotozyhmnwaugkhwbbqxyvhdhsirzilbdhlrsxozikwozsarhpeqsqvmuolymvbyqxehjmdtqabwjoobvtwjwcxpvqwnnzjmlzadqjybokyuwaojbjeuutlptqpyoepytsgemtebmydiiepepouclqcnhgifxijqzqahrmqnnibuqpnshnizzpskpiyqgyorowtpsjebgolgqgbxzlgfxtyevygfzrtjqtxcmjcayxwfsbvkhkoavpaglihenghsbzymbmshfjkkuzmbkemqdqrmegsufbeeanokffnxxguuykzyfgahftbjtvufldoffxkebzkcddknxwpzlnuytubsngprvptuvkwkagsfuibridskmvwbptnqfikfpbyrioouwruaudtibamwubyqxdnqwyjelnlaasvlqihsmxybtawvcmrfuxkwgywzslawktmpoeblekiqqjpbdtbfqgeqgxubbtovuhkguqedcuwsjttpobirjyktqrqqgbhohoodeggwbdbfzihnbefowbnjvimqcfyapycpxpyxyqojjgzbmyaodacpkuqsfahplurhitcyotwveyreywkgznmgdmjjqohlimmpdrsdorkihuhyfqlokdubkoddqyudksmvzblmgntbdqwdkrujawtkhayfrpkxqzhgymsjptwjkzoywbbiuskdruysiqofmtknblxbibqygqomfhisvnoprubpxwroivkuhoygkhehbenvkdhiuqrjbnevlziriwrjstxssxlidrrrswietcefebvzsrkjtuksgetgtexiuoobriwfzuztsmaldbcxjedebjvnhfizdziodwyqktxdudehefqxntifpywvxiovlhahkovjyedanelcimighowsyitkfulstihbzalrwoiyyjteejvcagiiyjnxpxiavlmuiodqcpczpsitaiposyjxlequyyhjzftpjuwackkhakjkrrykzpdgeolmwyrmxbpfjbfabtqcyoemzkyurineiufdfyqrhauxtmmkqeukxwxrgnirvmlyqszcfxcahkcykeswbpkgbplvtgucffukhfcdmfbintpxeowgrgsrcbomvaforvkednvvzrzdikxvgfytffnefpolvvcsdxdrihymaxrvraqnofiqxouoaaitlbpkbkjrqlbgmbjhocsztgwarntdjhovrmjtjbkpnyjhdqosjawowremdcejgasnntmbvypgpymfhiuioydbouqeglyvooyxgmpotmyreovswarnfqwjtihzgmdplgkpsgvxoxhgyzpuzesxlwztaycwylxgkrfkkpylzwbpirjjkdxfjvllhmqypdreqs\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/auth\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"rem\",\"password\":\"et\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Post API",
+            "description": "",
+            "item": [
+                {
+                    "name": "Read",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Create",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"eydcmlepur\",\"description\":\"a\",\"price\":4.289996896}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Details",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "4",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "4",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"jqcflhxfzndnt\",\"description\":\"voluptatem\",\"price\":477041257.1930033}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "4",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "Authorization",
+                "value": null,
+                "type": "string"
+            }
+        ]
+    }
+}

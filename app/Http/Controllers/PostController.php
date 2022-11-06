@@ -6,8 +6,14 @@ use App\Http\Requests\PostRequest;
 use Validator;
 use App\Models\Post;
 
+/**
+ * @group Post API
+ */
 class PostController extends Controller
 {
+    /**
+    * Read
+    */
     public function index()
     {
         $posts = auth()->user()->posts;
@@ -18,6 +24,9 @@ class PostController extends Controller
         ]);
     }
  
+    /**
+    * Details
+    */
     public function show($id)
     {
         $post = auth()->user()->posts()->find($id);
@@ -35,6 +44,9 @@ class PostController extends Controller
         ], 400);
     }
  
+    /**
+    * Create
+    */
     public function store(PostRequest $request)
     {
         $post = new Post();
@@ -55,6 +67,9 @@ class PostController extends Controller
         }
     }
  
+    /**
+    * Update
+    */
     public function update(PostRequest $request, $id)
     {
         $post = auth()->user()->posts()->find($id);
@@ -81,6 +96,9 @@ class PostController extends Controller
         }   
     }
  
+    /**
+    * Delete
+    */
     public function destroy($id)
     {
         $post = auth()->user()->posts()->find($id);
