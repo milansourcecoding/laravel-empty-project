@@ -16,8 +16,8 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::post('register', [PassportAuthController::class, 'register']);
-Route::post('login', [PassportAuthController::class, 'login']);
+Route::post('auth/register', [PassportAuthController::class, 'register']);
+Route::post('auth/login', [PassportAuthController::class, 'login']);
 Route::middleware('auth:api')->group(function () {
     Route::apiResource('posts', PostController::class);
 });
